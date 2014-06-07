@@ -1,0 +1,4 @@
+SmsNicaApi
+==========
+
+SmsNica Api documentation
