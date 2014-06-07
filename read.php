@@ -65,7 +65,7 @@
     </div>
     <!-- main area -->
     <div class="col-xs-12 col-sm-9">
-    <h6>Reading Outbound SMS</h6>
+    <h6>Reading Outbound(s) SMS</h6>
 
     <p>
         A Message instance resource represents the set of messages sent by an account.
@@ -107,7 +107,7 @@
             <tr>
                 <td>id</td>
                 <td>numeric</td>
-                <td>Message/SMS id from outbox collection. If not present default to 1</td>
+                <td>Message/SMS outbox id. If not present default to 1</td>
             </tr>
             </tbody>
         </table>
