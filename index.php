@@ -50,7 +50,7 @@
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
                 <![endif]-->
                 <noscript><h1>We recommend enabling JavaScript for a better user experience ;)</h1></noscript>
-                <img src="/img/smsnica180x180.png" class="img-circle img-responsive"  > <h3 class="hidden-xs">SmsNica API</h3>
+                <img src="/img/smsnica180x180.png" class="img-circle img-responsive"  > <h3 class="hidden-xs">SmsNica::API</h3>
                 <hr>
                 <div class="row row-offcanvas row-offcanvas-left">
                     <!-- sidebar -->
