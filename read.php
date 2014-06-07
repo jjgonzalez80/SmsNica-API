@@ -107,7 +107,7 @@
             <tr>
                 <td>id</td>
                 <td>numeric</td>
-                <td>Message/SMS id from outbox collection. If not present default to 1</td>
+                <td>Message/SMS outbox id. If not present default to 1</td>
             </tr>
             </tbody>
         </table>
