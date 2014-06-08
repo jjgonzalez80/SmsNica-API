@@ -73,7 +73,7 @@
 
     <h6>Request URL:</h6>
 
-    <p>Use the following url for reading your outbound SMS. The method will return a paginated collection of 10 messages/SMS per page.</p>
+    <p>Use the following url for reading your outbound SMS. This method will return a paginated collection of 10 SMS per page.</p>
 <pre class="prettyprint">GET|POST https://www.smsnica.com/api/v1/read/outbox/page/:num</pre>
     <p>Use the following url for reading a single outbound SMS based on the requested :id.</p>
 <pre class="prettyprint">GET|POST https://www.smsnica.com/api/v1/read/outbox/message/:id</pre>
