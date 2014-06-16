@@ -208,7 +208,8 @@ var data = {
 
 request.post(data, function (err, res, body) {
     console.log('body:', body);
-});</pre>
+});
+</pre>
         </div>
         <div class="tab-pane" id="ruby">
     <pre class="prettyprint lang-rb linenums">
@@ -221,10 +222,10 @@ request.post(data, function (err, res, body) {
 
     request = Net::HTTP::Post.new(uri.request_uri)
     request.set_form_data(
-            accesstoken: "{{accesstoken}}",
-            apikey: "{{apikey}}",
-            number: "{{number}}",
-            message: "{{message}}"
+            accesstoken => "{{accesstoken}}",
+            apikey => "{{apikey}}",
+            number => "{{number}}",
+            message => "{{message}}"
     )
 
     response = http.request(request)
@@ -309,7 +310,7 @@ request.post(data, function (err, res, body) {
         "carrier": "movistar",
         "credits": 999,
         "dateTime": {
-            "date": "2014-04-11 17:46:48",
+            "date": "<?php echo date('d/m/Y g:i A'); ?>",
             "timezone_type": 3,
             "timezone": "America/Managua"
         },
