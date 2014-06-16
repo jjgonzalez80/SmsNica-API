@@ -212,8 +212,8 @@ http = Net::HTTP.new(uri.host, uri.port)
 
 request = Net::HTTP::Post.new(uri.request_uri)
 request.set_form_data(
-        accesstoken: "{{accesstoken}}",
-        apikey: "{{apikey}}"
+        accesstoken => "{{accesstoken}}",
+        apikey => "{{apikey}}"
 )
 
 response = http.request(request)
@@ -232,7 +232,7 @@ response = http.request(request)
     "carrier": "movistar",
     "credits": 999,
     "dateTime": {
-        "date": "2014-04-11 17:46:48",
+        "date": "<?php echo date('d/m/Y g:i A'); ?>",
         "timezone_type": 3,
         "timezone": "America/Managua"
     },
@@ -251,7 +251,7 @@ response = http.request(request)
             "message":"Envía #dulce y recibiras un postre gratis.",
             "carrier":"movistar",
             "dateTime":{
-                "date":"2014-04-10 16:28:07",
+                "date":"<?php echo date('d/m/Y g:i A'); ?>",
                 "timezone_type":3,
                 "timezone":"America\/Managua"
             },
@@ -263,7 +263,7 @@ response = http.request(request)
             "message":"Donde será el bacanal esta noche?",
             "carrier":"movistar",
             "dateTime":{
-                "date":"2014-04-10 14:44:42",
+                "date":"<?php echo date('d/m/Y g:i A'); ?>",
                 "timezone_type":3,
                 "timezone":"America\/Managua"
             },
@@ -275,7 +275,7 @@ response = http.request(request)
             "message":"Les ofrecemlos sandalias brasileñas y accesorios de mano.",
             "carrier":"unknown",
             "dateTime":{
-                "date":"2014-04-10 14:42:07",
+                "date":"<?php echo date('d/m/Y g:i A'); ?>",
                 "timezone_type":3,
                 "timezone":"America\/Managua"
             },
@@ -287,7 +287,7 @@ response = http.request(request)
             "message":"Cuando empiezan las clases? Me gustaríia saber el horario.",
             "carrier":"claro",
             "dateTime":{
-                "date":"2014-04-10 13:55:58",
+                "date":"<?php echo date('d/m/Y g:i A'); ?>",
                 "timezone_type":3,
                 "timezone":"America\/Managua"
             },
@@ -299,7 +299,7 @@ response = http.request(request)
             "message":"A que hora cierran? Quisiera visitar su negocio.",
             "carrier":"claro",
             "dateTime":{
-                "date":"2014-04-10 13:25:51",
+                "date":"<?php echo date('d/m/Y g:i A'); ?>",
                 "timezone_type":3,
                 "timezone":"America\/Managua"
             },
@@ -311,7 +311,7 @@ response = http.request(request)
             "message":"?",
             "carrier":"La reunión sera el día de mañana, a las 2:00 pm. Por favor ser puntual. ",
             "dateTime":{
-                "date":"2014-04-10 13:05:12",
+                "date":"<?php echo date('d/m/Y g:i A'); ?>",
                 "timezone_type":3,
                 "timezone":"America\/Managua"
             },
@@ -323,7 +323,7 @@ response = http.request(request)
             "message":"Este fin de semana promoción en platos fuertes al 2x1. Aprovechen esta gran promoción.",
             "carrier":"movistar",
             "dateTime":{
-                "date":"2014-04-10 12:56:34",
+                "date":"<?php echo date('d/m/Y g:i A'); ?>",
                 "timezone_type":3,
                 "timezone":"America\/Managua"
             },
@@ -335,7 +335,7 @@ response = http.request(request)
             "message":"Nueva colección de trajes de baño para damas, descuento por compras de $50 a mas.",
             "carrier":"movistar",
             "dateTime":{
-                "date":"2014-04-10 12:51:58",
+                "date":"<?php echo date('d/m/Y g:i A'); ?>",
                 "timezone_type":3,
                 "timezone":"America\/Managua"
             },
@@ -347,7 +347,7 @@ response = http.request(request)
             "message":"FAV26C",
             "carrier":"Hoy se estará regalando tragos a las primeras 100 personas que lleguen antes de las 10 pm. ",
             "dateTime":{
-                "date":"2014-04-10 12:04:03",
+                "date":"<?php echo date('d/m/Y g:i A'); ?>",
                 "timezone_type":3,
                 "timezone":"America\/Managua"
             },
@@ -359,7 +359,7 @@ response = http.request(request)
             "message":"Clases de baile par adultos, a las personas que se inscriban una semana antes les daremos 10% de descuento.",
             "carrier":"unknown",
             "dateTime":{
-                "date":"2014-04-10 08:02:30",
+                "date":"<?php echo date('d/m/Y g:i A'); ?>",
                 "timezone_type":3,
                 "timezone":"America\/Managua"
             },
