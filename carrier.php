@@ -207,7 +207,7 @@ response = http.request(request)
     "number": "50583240355",
     "carrier": "movistar",
     "dateTime": {
-        "date": "2014-04-11 17:46:48",
+        "date": "<?php echo date('d/m/Y g:i A'); ?>",
         "timezone_type": 3,
         "timezone": "America/Managua"
     },
