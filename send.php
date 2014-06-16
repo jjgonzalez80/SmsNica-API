@@ -161,8 +161,8 @@
             data: {
                 accesstoken: "{{accesstoken}}",
                 apikey: "{{apikey}}",
-                number => "{{number}}",
-                message => "{{message}}"
+                number: "{{number}}",
+                message: "{{message}}"
             },
             success: function(data){
                 console.log(data);
@@ -183,8 +183,8 @@
             $.getJSON( 'https://www.smsnica.com/api/v1/send/sms', {
                 accesstoken: "{{accesstoken}}",
                 apikey: "{{apikey}}",
-                number => "{{number}}",
-                message => "{{message}}"
+                number: "{{number}}",
+                message: "{{message}}"
             })
                 .done(function( data ) {
                     console.log(data);
@@ -231,8 +231,8 @@
     request.set_form_data(
             accesstoken: "{{accesstoken}}",
             apikey: "{{apikey}}",
-            number => "{{number}}",
-            message => "{{message}}"
+            number: "{{number}}",
+            message: "{{message}}"
     )
 
     response = http.request(request)
