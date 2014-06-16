@@ -187,29 +187,19 @@ curl_close($curl);
         </div>
         <div class="tab-pane" id="node">
 <pre class="prettyprint lang-js linenums">
-var https = require('https');
+var request = require('request'); // https://www.npmjs.org/package/request
 
-var options = {
-  hostname: 'https://www.smsnica.com/api/v1/read/outbox/message/:id',
-  port: 443,
-  path: '/accesstoken={{accesstoken}}&apikey={{apikey}}&id={{id}}',
-  method: 'GET'
+var data = {
+    url: 'https://www.smsnica.com/api/v1/read/outbox/message/{{id}}',
+    form: {
+        apikey: '{{apikey}}',
+        accesstoken: '{{accesstoken}}'
+    }
 };
 
-var req = https.request(options, function(res) {
-  console.log("statusCode: ", res.statusCode);
-  console.log("headers: ", res.headers);
-
-  res.on('data', function(d) {
-    process.stdout.write(d);
-  });
-});
-req.end();
-
-req.on('error', function(e) {
-  console.error(e);
-});
-</pre>
+request.post(data, function (err, res, body) {
+    console.log('body:', body);
+});</pre>
         </div>
         <div class="tab-pane" id="ruby">
 <pre class="prettyprint lang-rb linenums">
