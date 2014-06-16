@@ -138,7 +138,7 @@ curl_close($curl);
         url: 'https://www.smsnica.com/api/v1/carrier',
         dataType: 'json',
         data: {
-            number => "{{number}}"
+            number: "{{number}}"
         },
         success: function(data){
             console.log(data);
@@ -157,7 +157,7 @@ curl_close($curl);
 <pre class="prettyprint lang-js linenums">
     (function($){
         $.getJSON( 'https://www.smsnica.com/api/v1/carrier', {
-            number => "{{number}}"
+            number: "{{number}}"
         })
             .done(function( data ) {
                 console.log(data);
