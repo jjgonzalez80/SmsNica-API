@@ -156,7 +156,7 @@ curl_close($curl);
         data: {
             accesstoken: "{{accesstoken}}",
             apikey: "{{apikey}}",
-            id => "{{id}}",
+            id: "{{id}}",
         },
         success: function(data){
             console.log(data);
@@ -177,7 +177,7 @@ curl_close($curl);
         $.getJSON( 'https://www.smsnica.com/api/v1/read/outbox/page/:num', {
             accesstoken: "{{accesstoken}}",
             apikey: "{{apikey}}",
-            num => "{{num}}",
+            num: "{{num}}",
         })
             .done(function( data ) {
                 console.log(data);
